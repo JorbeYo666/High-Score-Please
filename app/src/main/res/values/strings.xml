@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Application</string>
+<string name="reservation">Reservation</string>
+<string-array name="spinner_time_am">
+    <item>8:00-8:30</item>
+    <item>8:30-9:00</item>
+    <item>9:00-9:30</item>
+    <item>9:30-10:00</item>
+    <item>10:00-10:30</item>
+    <item>10:30-11:00</item>
+    <item>11:00-11:30</item>
+    <item>11:30-12:00</item>
+</string-array>
+
+<string-array name="department_name">
+    <item>department1</item>
+    <item>department2</item>
+    <item>department3</item>
+</string-array>
+
+<string-array name="department1_doctor">
+    <item>Sophia Brown</item>
+    <item>Ethan Wilson</item>
+    <item>Oliver Williams</item>
+</string-array>
+
+<string-array name="department2_doctor">
+    <item>Jackson Taylor</item>
+    <item>Lucas Smith</item>
+    <item>Lucas Williams</item>
+</string-array>
+
+<string-array name="department3_doctor">
+    <item>Sophia Brown</item>
+    <item>Sophia Miller</item>
+    <item>Oliver Davis</item>
+</string-array>
+</resources>
