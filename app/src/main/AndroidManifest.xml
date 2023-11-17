@@ -25,7 +25,7 @@
             android:name=".MapActivity"
             android:exported="false" />
         <activity
-            android:name=".AppointActivity"
+            android:name=".AppointmentActivity"
             android:exported="false" />
         <activity
             android:name=".MyReservationActivity"
