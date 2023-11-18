@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE5D4">
+
+
+    <View
+        android:id="@+id/blueBackground"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/me_user_top" />
+
+
+
+    <ImageView
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50px"
+        android:layout_marginTop="45px"
+        android:layout_marginEnd="28px"
+        android:contentDescription="@string/logout"
+        android:src="@drawable/logout" />
+
+
+    <ImageView
+        android:id="@+id/ivBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20px"
+        android:layout_marginTop="45px"
+        android:layout_marginEnd="64px"
+        android:contentDescription="@string/barrier"
+        android:src="@drawable/barrier" />
+
+    <ImageView
+        android:id="@+id/btn_me_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45px"
+        android:layout_toStartOf="@id/btn_logout"
+        android:contentDescription="@string/refresh"
+        android:src="@drawable/refresh" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reservationCard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/blueBackground"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#424242"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp">
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:orientation="horizontal"
+
+            android:rowCount="2">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_myReservation"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/mian_circle_function_button3"
+                android:src="@drawable/main_inquiry" />
+
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/btn_myReservation_text"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="26dp"
+                android:text="My Reservation"
+                android:textColor="#F3BB96"
+                android:textSize="23sp"
+                 />
+
+        </GridLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    <!-- 底部的白色横条 -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FDAB76"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_home"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/home_off" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-17dp"
+                android:textColor="#ffffff"
+                android:text="Home" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_me"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/me_on" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="-17dp"
+                android:textColor="#ffffff"
+                android:text="Me" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>
